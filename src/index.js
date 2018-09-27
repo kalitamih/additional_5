@@ -10,9 +10,9 @@ module.exports = function check(str, bracketsConfig) {
   while (counter && str.length) { 
     counter = 0; 
     for (let i=0; i < brackets.length; i++) { 
-      if ( str.indexOf(brackets[i]) != -1 ) {
+      if (str.indexOf( brackets[i] ) != -1) {
         str = str.substring(0, str.indexOf( brackets[i] )) + str.substring(str.indexOf( brackets[i] ) + 2);
-	    counter = 1; 
+	counter = 1; 
       }; 
     } 
   } 
