@@ -13,7 +13,7 @@ module.exports = function check(str, bracketsConfig) {
       if ( str.indexOf(brackets[i]) != -1 ) {
         str = str.substring(0, str.indexOf( brackets[i] )) + str.substring(str.indexOf( brackets[i] ) + 2);
 	    counter = 1; 
-	  }; 
+      }; 
     } 
   } 
 
